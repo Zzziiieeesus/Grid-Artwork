@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+
+    grid-area: row start /column start/ row end / column end
+
+    */
+
+    .red{
+      background-color: #E72F24;
+      grid-area: 1/1/2/2;
+    }
+    .one{
+      background-color: #F0F1EC;
+      grid-area:1/2/2/5;
+    }
+    .two{
+      background-color: #F0F1EC;
+      grid-area: 2/1/4/2;
+    }
+    .three{
+      background-color: #F0F1EC;
+      grid-area: 2/2/4/4;
+    }
+    .blue{
+      background-color: #004592;
+      grid-area:2/4/3/5;
+    }
+    .four{
+      background-color: #F0F1EC;
+      grid-area: 3/4/5/5;
+    }
+    .five{
+      background-color: #F0F1EC;
+      grid-area: 4/1/5/2;
+    }
+    .yellow{
+      background-color: #F9D01E;
+      grid-area:4/2/5/3;
+    }
+    .black{
+      background-color: #232629;
+      grid-area: 4/3/5/4;
+    }
+    .centerDiv{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* height: 100vh; */
+    }
+    .artworkDiv{
+      width: 748px;
+      height: 748px;
+      display: grid;
+      background-color: black;
+      gap: 9px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      margin-top: 50px;
+    }
+    .textDiv{
+      text-align: center;
+    }
+    h1{
+      font-size: 20px;
+    }
+    h2{
+      font-size: 15px;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="centerDiv">
+    <div class="artworkDiv">
+      <div class="red"></div>
+      <div class="white one"></div>
+  
+      <div class="white two"></div>
+      <div class="white three"></div>
+      <div class="blue"></div>
+      
+      <div class="white four"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+      <div class="white five"></div>
+    </div>
+  
+  </div>
+  
+  <div class="textDiv">
+    <h1>Composition No III, with Red, Blue, Yellow, and Black</h1>
+    <h2><i>by </i>Piet Mondrian</h2>
+  </div>
+
+</body>
+
+</html>
